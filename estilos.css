@@ -1,0 +1,255 @@
+
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('fonts/Product Sans Regular.ttf') format('ttf');
+	src: url('fonts/Product Sans Bold.ttf') format('ttf');
+  }
+
+
+
+*{
+	margin: 0px;
+	font-family: "Product Sans Regular";
+    
+}	
+
+body {
+
+	padding: 0px;
+    background: url('monogram.png');
+}
+
+body::before {
+    content: "";
+    position:fixed; /* O absolute si prefieres */
+    top: 0;
+    left: 0;
+    width: 170%;
+    height: 170%;
+    background: url('img/monogram.png') center/cover no-repeat;
+    filter: blur(5px);
+    opacity: 0.05; /* Ajusta la opacidad */
+    z-index: -1; /* Coloca la imagen detrás del contenido */
+    overflow: hidden;
+  }
+/* los id se nombran con #id y los class se nombran con .class*/
+#textosup{
+	padding: 2em 0 1em 0;
+    padding-left: clamp(0.25rem, 14vw, 20em);
+    padding-right: clamp(0.25rem, 14vw, 20em);/* Mínimo 0.25rem, ideal 14% del viewport, máximo 5em */
+}
+#arribaso{
+ width: 100%; height:60px; background-color: black;
+}
+.imgtxiki{
+	width:30px;
+	filter: invert(100%);
+	/*Se pone punto en vez de # porque necesita un selector de clase*/
+}
+.logorb{
+	width:150px;
+	filter: invert(100%);
+}
+
+#introduccion{
+	color: white;
+}
+.header {
+    display: flex;
+    justify-content: space-between; /* Separa los elementos */
+    align-items: center; /* Alinea verticalmente */
+    padding: 10px;
+	margin: 0px;
+    background-color: black;
+    color: black;
+}
+
+.izq {
+    font-size: 20px;
+	padding-left: 20px;
+}
+
+.dcha {
+   width: 20px;
+   padding-right: 90px;
+   gap: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center; /* Alinea verticalmente */
+   
+}
+.id {
+	margin: 20px;
+}
+.eleh {
+    display: flex; /* Activa Flexbox */
+    justify-content: space-between; /* Espaciado uniforme entre los elementos */
+   /* align-items: center; /* Centra verticalmente */
+    gap: min(10em, 20px); /* Se usará el menor valor entre 1em y 20px *//* Espacio entre los divs */
+/* padding-top: 60px;*/
+padding: 3em 16em 0px 16em;
+align-items: center;
+}
+.eleh2 {
+    display: flex; /* Activa Flexbox */
+     /* Espaciado uniforme entre los elementos */
+   /* align-items: center; /* Centra verticalmente */
+    /* Se usará el menor valor entre 1em y 20px *//* Espacio entre los divs */
+/* padding-top: 60px;*/
+justify-content: center;
+padding: 0px 6em 10em 6em;
+align-items: center;
+}
+.eleh div {
+    flex: 1; /* Hace que los divs tengan el mismo ancho */
+    text-align: center; /* Centra la imagen dentro del div */
+}
+
+.eleh img {
+    width: 80%; /* Ajusta el tamaño de la imagen */
+    max-width: 200px; /* Límite máximo de tamaño */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 1em;
+}
+.eleh2 div {
+    flex: 1; /* Hace que los divs tengan el mismo ancho */
+    text-align: center; /* Centra la imagen dentro del div */
+}
+
+.eleh2 img {
+    width: 80%; /* Ajusta el tamaño de la imagen */
+    max-width: 200px; /* Límite máximo de tamaño */
+    height: auto; /* Mantiene la proporción */
+}
+.imgc{
+    color: rgb(46, 46, 46);
+padding-top: 30px;
+    max-width: 300px;
+    max-height: 600px;
+    padding-bottom: 50px;
+    border-radius: 30px;
+}
+.imgc:hover{
+    width: 100;
+    color: black;
+    background-color: white;
+    transition: ALL .3s;
+}
+
+
+.imgc:hover{
+
+    transform:scale(1.1) translateY(-10PX);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.imgtxiki:hover{
+
+    transform: scale(1.1);
+    transition: ALL .1s;
+}
+
+#insta:hover ~ yt{
+    opacity: 0.2;
+    transform: scale(0.5);
+}
+#botonera{
+    
+}
+#txtbtn{
+   padding-top: 1em;
+    border: none;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+}
+#txtbtn:hover{
+    
+     color: rgb(92, 92, 92);
+ }
+ .hided{
+    display: none;
+ }
+ .show{
+    display: block;
+ }
+ #proyectos-izq{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    /*padding: 60px 30em 0px 30em;*/
+    padding-inline:clamp(0.25rem, 14vw, 30em);
+    padding-top: 60px;
+    padding-bottom: 3em;
+    /*clamp(0.25rem, 14vw, 20em);/* Mínimo 0.25rem, ideal 14% del viewport, máximo 5em */
+ }
+ #infoproyecto{
+    padding: 0 0 0 3em;
+ }
+ #textoproyecto{
+    padding: 0em 0em 0em 0em;
+    size: 1.5em;
+ }
+ .imgpro{
+    border-radius: 5px;
+  
+    height:10em;
+ }
+
+ #textoproyectodcha{
+
+    text-align: right;
+    
+ }
+ #h3dcha{
+    text-align: right;
+ }
+ #infoproyectodcha{
+    padding: 0em 3em 0em 0em;
+ }
+hr{
+    /*padding: 2em 0 2em 0;*/
+    /*margin: 3.5em 20em 0em 20em;*/
+    margin-inline: clamp(0.25rem, 14vw, 20em);
+    margin-top: 3.5em ;
+ }
+
+.slider{
+    padding-top: 2em;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    gap: 2em;
+    
+}
+
+
+button{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: 0;
+    border-radius: 1em;
+    height: 3em;
+    width: 3em;
+}
+button:hover{
+    background-color: rgb(34, 34, 34);
+}
+#slide:hover{
+ transform: scale(1.03);
+ transition: transform 0.3s ease-in-out;
+ 
+ 
+}
+.slider--inner{
+  overflow: hidden;
+ border: black;
+ border-radius: 1cm;
+
+}
+
+.slide{
+    height: clamp(2em, 75vw, 40em);/* Mínimo 0.25rem, ideal 14% del viewport, máximo 5em */
+}
+    
